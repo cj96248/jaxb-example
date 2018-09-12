@@ -98,7 +98,7 @@ public class GenerateXML {
 	
 	
 	@Test
-	public void test66() throws Exception {
+	public void test6() throws Exception {
 		Marshaller marshaller = context.createMarshaller();
 		marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
 		marshaller.setProperty(Marshaller.JAXB_FRAGMENT, true);

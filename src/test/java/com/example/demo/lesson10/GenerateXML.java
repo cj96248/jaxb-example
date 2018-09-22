@@ -95,4 +95,34 @@ public class GenerateXML {
 		marshaller.marshal(s, System.out);
 	}
 	
+	@Test
+	@Ignore
+	public void test8() throws JAXBException {
+		JAXBContext context = JAXBContext.newInstance(Eight.class);
+		Marshaller marshaller = context.createMarshaller();
+		marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+		
+		Eight e = new Eight();
+		e.setCode("1007");
+		e.setName("Test name");
+		
+		marshaller.marshal(e, System.out);
+	}
+	
+	@Test
+	public void test9() throws JAXBException {
+		JAXBContext context = JAXBContext.newInstance(Nine.class);
+		Marshaller marshaller = context.createMarshaller();
+		marshaller.setProperty(Marshaller.JAXB_FORMATTED_OUTPUT, true);
+		
+		Nine n = new Nine();
+		n.setCode("1009");
+		n.setName("Test case");
+		n.setAge(22);
+		n.setDesc("The desc");
+		n.setSlary(29.99);
+		
+		marshaller.marshal(n, System.out);
+	}
+	
 }

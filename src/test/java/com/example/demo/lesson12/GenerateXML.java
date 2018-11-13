@@ -88,6 +88,7 @@ public class GenerateXML {
 	}
 	
 	@Test
+	@Ignore
 	public void test5_2() throws JAXBException {
 		Watermelon watermelon = new Watermelon();
 		watermelon.setShape("椭圆形");

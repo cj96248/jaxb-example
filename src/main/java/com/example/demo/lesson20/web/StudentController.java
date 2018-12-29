@@ -39,10 +39,6 @@ public class StudentController {
 		return studentService.findById(id);
 	}
 	
-	@GetMapping(value="/id/common", produces= {MediaType.APPLICATION_JSON_VALUE,MediaType.APPLICATION_XML_VALUE})
-	public Student findById5(String id) {
-		return studentService.findById(id);
-	}
 	
 	@GetMapping(value="/list")
 	public List<Student> findAll(){
